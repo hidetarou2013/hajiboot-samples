@@ -1,0 +1,233 @@
+Connected, dumping recent logs for app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+
+2016-12-18T14:51:08.33+0900 [API/5]      OUT Created app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027
+2016-12-18T14:51:11.56+0900 [API/1]      OUT Updated app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027 ({"route"=>"a9a69e09-a690-4c8b-b71c-6f958d20d3ba", :verb=>"add", :relation=>"routes", :related_guid=>"a9a69e09-a690-4c8b-b71c-6f958d20d3ba"})
+2016-12-18T14:51:34.50+0900 [API/2]      OUT Updated app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027 ({"state"=>"STARTED"})
+2016-12-18T14:51:34.85+0900 [STG/0]      OUT Downloading java_buildpack...
+2016-12-18T14:51:34.90+0900 [STG/0]      OUT Downloaded java_buildpack
+2016-12-18T14:51:34.90+0900 [STG/0]      OUT Creating container
+2016-12-18T14:51:36.33+0900 [STG/0]      OUT Successfully created container
+2016-12-18T14:51:36.34+0900 [STG/0]      OUT Downloading app package...
+2016-12-18T14:51:37.69+0900 [STG/0]      OUT Downloaded app package (26.4M)
+2016-12-18T14:51:37.69+0900 [STG/0]      OUT Staging...
+2016-12-18T14:51:38.96+0900 [STG/0]      OUT -----> Java Buildpack Version: v3.10 (offline) | https://github.com/cloudfoundry/java-buildpack.git#193d6b7
+2016-12-18T14:51:39.15+0900 [STG/0]      OUT -----> Downloading Open Jdk JRE 1.8.0_111 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_111.tar.gz (found in cache)
+2016-12-18T14:51:40.27+0900 [STG/0]      OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+2016-12-18T14:51:40.27+0900 [STG/0]      OUT -----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+2016-12-18T14:51:40.30+0900 [STG/0]      OUT        Memory Settings: -Xms681574K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xss349K -XX:MetaspaceSize=104857K
+2016-12-18T14:51:40.30+0900 [STG/0]      OUT -----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+2016-12-18T14:51:48.34+0900 [STG/0]      OUT Exit status 0
+2016-12-18T14:51:48.34+0900 [STG/0]      OUT Staging complete
+2016-12-18T14:51:48.34+0900 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2016-12-18T14:51:48.34+0900 [STG/0]      OUT Uploading droplet...
+2016-12-18T14:51:48.34+0900 [STG/0]      OUT Uploading build artifacts cache...
+2016-12-18T14:51:48.42+0900 [STG/0]      OUT Uploaded build artifacts cache (108B)
+2016-12-18T14:51:54.60+0900 [STG/0]      OUT Uploaded droplet (71.5M)
+2016-12-18T14:51:54.62+0900 [STG/0]      OUT Uploading complete
+2016-12-18T14:51:54.66+0900 [STG/0]      OUT Destroying container
+2016-12-18T14:51:55.33+0900 [CELL/0]     OUT Creating container
+2016-12-18T14:51:56.51+0900 [STG/0]      OUT Successfully destroyed container
+2016-12-18T14:51:56.74+0900 [CELL/0]     OUT Successfully created container
+2016-12-18T14:52:00.20+0900 [CELL/0]     OUT Starting health monitoring of container
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT   .   ____          _            __ _ _
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+2016-12-18T14:52:02.57+0900 [APP/PROC/WEB/0]OUT  =========|_|==============|___/=/_/_/_/
+2016-12-18T14:52:02.58+0900 [APP/PROC/WEB/0]OUT  :: Spring Boot ::        (v1.4.0.RELEASE)
+2016-12-18T14:52:02.89+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:02.889  INFO 19 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+2016-12-18T14:52:03.04+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:03.047  INFO 19 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+2016-12-18T14:52:03.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:03.078  INFO 19 --- [           main] com.example.HajibootRestApplication      : Starting HajibootRestApplication on 811a0ef1-2d7c-4913-7df6-b97cd9f7b9f4 with PID 19 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+2016-12-18T14:52:03.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:03.078  INFO 19 --- [           main] com.example.HajibootRestApplication      : The following profiles are active: cloud
+2016-12-18T14:52:03.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:03.174  INFO 19 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@685f4c2e: startup date [Sun Dec 18 05:52:03 UTC 2016]; root of context hierarchy
+2016-12-18T14:52:06.48+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:06.486  INFO 19 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+2016-12-18T14:52:06.49+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:06.493  INFO 19 --- [           main] urceCloudServiceBeanFactoryPostProcessor : No matching service found. Skipping auto-reconfiguration.
+2016-12-18T14:52:06.88+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:06.885  INFO 19 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68f6bc5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-18T14:52:08.09+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:08.092  INFO 19 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-12-18T14:52:08.15+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:08.157  INFO 19 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-18T14:52:08.16+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:08.160  INFO 19 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-12-18T14:52:08.46+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:08.461  INFO 19 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-18T14:52:08.46+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:08.461  INFO 19 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5291 ms
+2016-12-18T14:52:09.27+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.275  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-18T14:52:09.28+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.289  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.289  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.289  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.290  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.290  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.292  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-18T14:52:09.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:09.293  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-18T14:52:10.03+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.036  INFO 19 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-18T14:52:10.06+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.060  INFO 19 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2016-12-18T14:52:10.06+0900 [APP/PROC/WEB/0]OUT 	name: default
+2016-12-18T14:52:10.06+0900 [APP/PROC/WEB/0]OUT 	...]
+2016-12-18T14:52:10.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.208  INFO 19 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-12-18T14:52:10.21+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.213  INFO 19 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-18T14:52:10.21+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.216  INFO 19 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-18T14:52:10.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.307  INFO 19 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-12-18T14:52:10.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:10.518  INFO 19 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-12-18T14:52:11.50+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.504  INFO 19 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-12-18T14:52:11.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.512 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+2016-12-18T14:52:11.51+0900 [APP/PROC/WEB/0]OUT 10. drop table customers if exists  {executed in 1 msec}
+2016-12-18T14:52:11.52+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.525 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+2016-12-18T14:52:11.52+0900 [APP/PROC/WEB/0]OUT 10. create table customers (id integer generated by default as identity, first_name varchar(255), 
+2016-12-18T14:52:11.52+0900 [APP/PROC/WEB/0]OUT last_name varchar(255), primary key (id))  {executed in 12 msec}
+2016-12-18T14:52:11.52+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.526  INFO 19 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-12-18T14:52:11.61+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.609  INFO 19 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-12-18T14:52:11.72+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.724  INFO 19 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/vcap/app/BOOT-INF/classes/data.sql]
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.731 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 10. INSERT INTO customers(first_name, last_name) VALUES('Nobita', 'Nobi')  {executed in 4 msec}
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.732 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 10. INSERT INTO customers(first_name, last_name) VALUES('Takeshi', 'Goda')  {executed in 0 msec}
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.733 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 10. INSERT INTO customers(first_name, last_name) VALUES('Suneo', 'Honekawa')  {executed in 0 msec}
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.734 DEBUG 19 --- [           main] jdbc.sqltiming                           :  org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 10. INSERT INTO customers(first_name, last_name) VALUES('Shizuka', 'Minamoto')  {executed in 0 msec}
+2016-12-18T14:52:11.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:11.735  INFO 19 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/vcap/app/BOOT-INF/classes/data.sql] in 10 ms.
+2016-12-18T14:52:12.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:12.133  INFO 19 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-18T14:52:13.05+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.051  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@685f4c2e: startup date [Sun Dec 18 05:52:03 UTC 2016]; root of context hierarchy
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.303  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[DELETE]}" onto void com.example.api.CustomerRestController.deleteCustomer(java.lang.Integer)
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.306  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers],methods=[GET]}" onto org.springframework.data.domain.Page<com.example.domain.Customer> com.example.api.CustomerRestController.getCustomers(org.springframework.data.domain.Pageable)
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.306  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers],methods=[POST]}" onto org.springframework.http.ResponseEntity<com.example.domain.Customer> com.example.api.CustomerRestController.postCustomers(com.example.domain.Customer,org.springframework.web.util.UriComponentsBuilder)
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.306  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[PUT]}" onto com.example.domain.Customer com.example.api.CustomerRestController.putCustomer(java.lang.Integer,com.example.domain.Customer)
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.307  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[GET]}" onto com.example.domain.Customer com.example.api.CustomerRestController.getCustomer(java.lang.Integer)
+2016-12-18T14:52:13.30+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.309  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18T14:52:13.31+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.309  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-18T14:52:13.37+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.372  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:52:13.37+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.372  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:52:13.44+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:13.444  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:52:14.16+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.167  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-18T14:52:14.16+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.168  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.171  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.172  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.175  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.176  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.177  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.178  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-18T14:52:14.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.184  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.188  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.19+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.189  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.19+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.192  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-18T14:52:14.19+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.192  INFO 19 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-18T14:52:14.57+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.571  INFO 19 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-18T14:52:14.59+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.596  INFO 19 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-18T14:52:14.85+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.855  INFO 19 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-18T14:52:14.86+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:14.866  INFO 19 --- [           main] com.example.HajibootRestApplication      : Started HajibootRestApplication in 13.463 seconds (JVM running for 14.534)
+2016-12-18T14:52:15.38+0900 [CELL/0]     OUT Container became healthy
+2016-12-18T14:52:45.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:45.070  INFO 19 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-18T14:52:45.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:45.070  INFO 19 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-18T14:52:45.09+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:45.098  INFO 19 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2016-12-18T14:52:45.19+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:45.199 DEBUG 19 --- [nio-8080-exec-2] jdbc.sqltiming                           :  org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:70)
+2016-12-18T14:52:45.19+0900 [APP/PROC/WEB/0]OUT 10. select count(customer0_.id) as col_0_0_ from customers customer0_  {executed in 2 msec}
+2016-12-18T14:52:45.21+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:52:45.214 DEBUG 19 --- [nio-8080-exec-2] jdbc.sqltiming                           :  org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:70)
+2016-12-18T14:52:45.21+0900 [APP/PROC/WEB/0]OUT 10. select customer0_.id as id1_0_, customer0_.first_name as first_na2_0_, customer0_.last_name 
+2016-12-18T14:52:45.21+0900 [APP/PROC/WEB/0]OUT as last_nam3_0_ from customers customer0_ order by customer0_.first_name, customer0_.last_name 
+2016-12-18T14:52:45.21+0900 [APP/PROC/WEB/0]OUT limit 10  {executed in 0 msec}
+2016-12-18T14:52:45.33+0900 [RTR/4]      OUT hajiboot-rest-hidetarou2013.cfapps.io - [18/12/2016:05:52:45.018 +0000] "GET /api/customers HTTP/1.1" 200 0 326 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:33829" "10.10.155.26:61445" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"5b3438d0-e4a5-4491-4dfb-1588992c69d7" response_time:0.317408717 app_id:"58252aca-1d02-4ca0-bb9d-51d00093e027" app_index:"0" x_b3_traceid:"b2acde68df095ecf" x_b3_spanid:"b2acde68df095ecf" x_b3_parentspanid:"-"
+2016-12-18T15:06:27.22+0900 [API/5]      OUT Updated app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027 ({"name"=>"hajiboot-rest-hidetarou2013", "memory"=>512, "buildpack"=>"java_buildpack"})
+2016-12-18T15:06:42.06+0900 [API/1]      OUT Updated app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027 ({"state"=>"STOPPED"})
+2016-12-18T15:06:42.06+0900 [CELL/0]     OUT Exit status 0
+2016-12-18T15:06:42.06+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.068  INFO 19 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@685f4c2e: startup date [Sun Dec 18 05:52:03 UTC 2016]; root of context hierarchy
+2016-12-18T15:06:42.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.070  INFO 19 --- [       Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-12-18T15:06:42.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.073  INFO 19 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-12-18T15:06:42.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.075  INFO 19 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-18T15:06:42.07+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.075  INFO 19 --- [       Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-12-18T15:06:42.08+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.086 DEBUG 19 --- [       Thread-3] jdbc.sqltiming                           :  org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+2016-12-18T15:06:42.08+0900 [APP/PROC/WEB/0]OUT 10. drop table customers if exists  {executed in 10 msec}
+2016-12-18T15:06:42.08+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:06:42.086  INFO 19 --- [       Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-12-18T15:06:42.18+0900 [APP/PROC/WEB/0]OUT Exit status 143
+2016-12-18T15:06:42.21+0900 [CELL/0]     OUT Destroying container
+2016-12-18T15:06:43.08+0900 [CELL/0]     OUT Successfully destroyed container
+2016-12-18T15:09:01.50+0900 [API/3]      OUT Updated app with guid 58252aca-1d02-4ca0-bb9d-51d00093e027 ({"state"=>"STARTED"})
+2016-12-18T15:09:01.87+0900 [STG/0]      OUT Downloading java_buildpack...
+2016-12-18T15:09:01.98+0900 [STG/0]      OUT Downloaded java_buildpack
+2016-12-18T15:09:01.98+0900 [STG/0]      OUT Creating container
+2016-12-18T15:09:03.96+0900 [STG/0]      OUT Successfully created container
+2016-12-18T15:09:03.96+0900 [STG/0]      OUT Downloading app package...
+2016-12-18T15:09:05.86+0900 [STG/0]      OUT Downloaded app package (27.1M)
+2016-12-18T15:09:05.86+0900 [STG/0]      OUT Downloading build artifacts cache...
+2016-12-18T15:09:05.98+0900 [STG/0]      OUT Downloaded build artifacts cache (108B)
+2016-12-18T15:09:05.98+0900 [STG/0]      OUT Staging...
+2016-12-18T15:09:07.17+0900 [STG/0]      OUT -----> Java Buildpack Version: v3.10 (offline) | https://github.com/cloudfoundry/java-buildpack.git#193d6b7
+2016-12-18T15:09:07.32+0900 [STG/0]      OUT -----> Downloading Open Jdk JRE 1.8.0_111 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_111.tar.gz (found in cache)
+2016-12-18T15:09:08.43+0900 [STG/0]      OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+2016-12-18T15:09:08.43+0900 [STG/0]      OUT -----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+2016-12-18T15:09:08.46+0900 [STG/0]      OUT        Memory Settings: -XX:MaxMetaspaceSize=104857K -Xss349K -Xms681574K -XX:MetaspaceSize=104857K -Xmx681574K
+2016-12-18T15:09:08.46+0900 [STG/0]      OUT -----> Downloading Maria Db JDBC 1.5.4 from https://java-buildpack.cloudfoundry.org/mariadb-jdbc/mariadb-jdbc-1.5.4.jar (found in cache)
+2016-12-18T15:09:08.47+0900 [STG/0]      OUT -----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+2016-12-18T15:09:16.67+0900 [STG/0]      OUT Exit status 0
+2016-12-18T15:09:16.67+0900 [STG/0]      OUT Staging complete
+2016-12-18T15:09:16.67+0900 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2016-12-18T15:09:16.67+0900 [STG/0]      OUT Uploading build artifacts cache...
+2016-12-18T15:09:16.67+0900 [STG/0]      OUT Uploading droplet...
+2016-12-18T15:09:16.74+0900 [STG/0]      OUT Uploaded build artifacts cache (108B)
+2016-12-18T15:09:22.96+0900 [STG/0]      OUT Uploaded droplet (72.6M)
+2016-12-18T15:09:22.98+0900 [STG/0]      OUT Uploading complete
+2016-12-18T15:09:23.02+0900 [STG/0]      OUT Destroying container
+2016-12-18T15:09:23.81+0900 [CELL/0]     OUT Creating container
+2016-12-18T15:09:24.77+0900 [CELL/0]     OUT Successfully created container
+2016-12-18T15:09:25.94+0900 [STG/0]      OUT Successfully destroyed container
+2016-12-18T15:09:27.98+0900 [CELL/0]     OUT Starting health monitoring of container
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT   .   ____          _            __ _ _
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+2016-12-18T15:09:30.00+0900 [APP/PROC/WEB/0]OUT  =========|_|==============|___/=/_/_/_/
+2016-12-18T15:09:30.01+0900 [APP/PROC/WEB/0]OUT  :: Spring Boot ::        (v1.4.0.RELEASE)
+2016-12-18T15:09:30.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:30.193  INFO 20 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+2016-12-18T15:09:30.48+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:30.484  INFO 20 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+2016-12-18T15:09:30.53+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:30.537  INFO 20 --- [           main] com.example.HajibootRestApplication      : Starting HajibootRestApplication on dc3df315-f23c-4bf9-60eb-a99720285dbd with PID 20 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+2016-12-18T15:09:30.53+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:30.538  INFO 20 --- [           main] com.example.HajibootRestApplication      : The following profiles are active: cloud
+2016-12-18T15:09:30.71+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:30.716  INFO 20 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7daf6ecc: startup date [Sun Dec 18 06:09:30 UTC 2016]; root of context hierarchy
+2016-12-18T15:09:33.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:33.135  INFO 20 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Skipping auto-reconfiguring beans of type javax.sql.DataSource
+2016-12-18T15:09:33.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:33.135  INFO 20 --- [           main] ongoCloudServiceBeanFactoryPostProcessor : Skipping auto-reconfiguring beans of type org.springframework.data.mongodb.MongoDbFactory
+2016-12-18T15:09:33.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:33.136  INFO 20 --- [           main] bbitCloudServiceBeanFactoryPostProcessor : Skipping auto-reconfiguring beans of type org.springframework.amqp.rabbit.connection.ConnectionFactory
+2016-12-18T15:09:33.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:33.136  INFO 20 --- [           main] edisCloudServiceBeanFactoryPostProcessor : Skipping auto-reconfiguring beans of type org.springframework.data.redis.connection.RedisConnectionFactory
+2016-12-18T15:09:33.35+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:33.351  INFO 20 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$224eeb0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-18T15:09:34.19+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.191  INFO 20 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-12-18T15:09:34.21+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.209  INFO 20 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-18T15:09:34.21+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.211  INFO 20 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-12-18T15:09:34.40+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.404  INFO 20 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-18T15:09:34.40+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.405  INFO 20 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3711 ms
+2016-12-18T15:09:34.74+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.747  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-18T15:09:34.75+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.754  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-18T15:09:34.75+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.755  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-18T15:09:34.75+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.756  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-18T15:09:34.75+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:34.756  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-18T15:09:35.16+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.162  INFO 20 --- [           main] o.s.c.s.r.PooledDataSourceCreator        : Found Tomcat JDBC connection pool on the classpath. Using it for DataSource connection pooling.
+2016-12-18T15:09:35.35+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.355  INFO 20 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-18T15:09:35.40+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.402  INFO 20 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2016-12-18T15:09:35.40+0900 [APP/PROC/WEB/0]OUT 	name: default
+2016-12-18T15:09:35.40+0900 [APP/PROC/WEB/0]OUT 	...]
+2016-12-18T15:09:35.54+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.548  INFO 20 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-12-18T15:09:35.55+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.550  INFO 20 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-18T15:09:35.55+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.552  INFO 20 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-18T15:09:35.62+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.624  INFO 20 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-12-18T15:09:35.84+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.841  WARN 20 --- [           main] o.a.tomcat.jdbc.pool.ConnectionPool      : maxIdle is larger than maxActive, setting maxIdle to: 4
+2016-12-18T15:09:35.98+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:35.982  INFO 20 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-12-18T15:09:36.59+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:36.593  INFO 20 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-12-18T15:09:36.63+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:36.630  INFO 20 --- [           main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: customers
+2016-12-18T15:09:36.63+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:36.633  INFO 20 --- [           main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: customers
+2016-12-18T15:09:36.69+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:36.699  INFO 20 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-12-18T15:09:37.13+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:37.129  INFO 20 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-18T15:09:38.04+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.040  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7daf6ecc: startup date [Sun Dec 18 06:09:30 UTC 2016]; root of context hierarchy
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.173  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers],methods=[GET]}" onto org.springframework.data.domain.Page<com.example.domain.Customer> com.example.api.CustomerRestController.getCustomers(org.springframework.data.domain.Pageable)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.175  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[GET]}" onto com.example.domain.Customer com.example.api.CustomerRestController.getCustomer(java.lang.Integer)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.175  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers],methods=[POST]}" onto org.springframework.http.ResponseEntity<com.example.domain.Customer> com.example.api.CustomerRestController.postCustomers(com.example.domain.Customer,org.springframework.web.util.UriComponentsBuilder)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.176  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[PUT]}" onto com.example.domain.Customer com.example.api.CustomerRestController.putCustomer(java.lang.Integer,com.example.domain.Customer)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.176  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[DELETE]}" onto void com.example.api.CustomerRestController.deleteCustomer(java.lang.Integer)
+2016-12-18T15:09:38.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.179  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18T15:09:38.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.180  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-18T15:09:38.23+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.235  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.23+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.235  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.295  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.733  INFO 20 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-18T15:09:38.83+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.837  INFO 20 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-18T15:09:38.84+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.844  INFO 20 --- [           main] com.example.HajibootRestApplication      : Started HajibootRestApplication in 9.872 seconds (JVM running for 10.741)
+2016-12-18T15:09:40.86+0900 [CELL/0]     OUT Container became healthy
+2016-12-18T15:13:42.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.512  INFO 20 --- [io-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-18T15:13:42.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.512  INFO 20 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-18T15:13:42.56+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.561  INFO 20 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2016-12-18T15:13:43.06+0900 [RTR/0]      OUT hajiboot-rest-hidetarou2013.cfapps.io - [18/12/2016:06:13:42.471 +0000] "POST /api/customers HTTP/1.1" 201 40 47 "-" "curl/7.29.0" "10.10.66.143:25234" "10.10.148.102:61172" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"http" vcap_request_id:"33b6ddb7-624b-4d86-5bae-9a9f5e8959b9" response_time:0.592911663 app_id:"58252aca-1d02-4ca0-bb9d-51d00093e027" app_index:"0" x_b3_traceid:"b21c378f46545cf1" x_b3_spanid:"b21c378f46545cf1" x_b3_parentspanid:"-"
+2016-12-18T15:14:33.87+0900 [RTR/0]      OUT hajiboot-rest-hidetarou2013.cfapps.io - [18/12/2016:06:14:33.808 +0000] "GET /api/customers HTTP/1.1" 200 0 173 "-" "curl/7.29.0" "10.10.66.143:25387" "10.10.148.102:61172" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"http" vcap_request_id:"baf66c1a-3f0d-4527-6354-3f7fe51570d6" response_time:0.066544948 app_id:"58252aca-1d02-4ca0-bb9d-51d00093e027" app_index:"0" x_b3_traceid:"19f2e5996aec3d8f" x_b3_spanid:"19f2e5996aec3d8f" x_b3_parentspanid:"-"
