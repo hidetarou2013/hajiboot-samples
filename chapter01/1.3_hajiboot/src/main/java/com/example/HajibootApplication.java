@@ -19,9 +19,11 @@ public class HajibootApplication {
 	 * [modified][p24]spring-boot-devtools
 	 * @return
 	 */
-	@GetMapping("/chap01/")
+	@GetMapping("/chap01")
 	String home() {
-		return "Hello World chap01 with devtools! ";
+		String ret = "Hello World chap01 with devtools! : ";
+		ret += System.getenv("CF_INSTANCE_INDEX");
+		return ret;
 	}
 
 	public static void main(String[] args) {
