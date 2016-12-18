@@ -22,8 +22,13 @@ public class HajibootApplication {
 	@GetMapping("/chap01")
 	String home() {
 		String ret = "Hello World chap01 with devtools! : ";
-		ret += System.getenv("CF_INSTANCE_INDEX");
+		ret += System.getenv("CF_INSTANCE_INDEX") + " Ver.2";
 		return ret;
+	}
+
+	@GetMapping("/kill")
+	void kill(){
+		System.exit(1);;
 	}
 
 	public static void main(String[] args) {

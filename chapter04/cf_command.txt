@@ -1,0 +1,255 @@
+2016-12-18T14:05:00.25+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:00.254  INFO 19 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+2016-12-18T14:05:00.31+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:00.312  INFO 19 --- [           main] com.example.HajibootApplication          : Starting HajibootApplication on 7141dd8e-2e2d-4afd-53e7-d3aece404457 with PID 19 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+2016-12-18T14:05:00.31+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:00.313  INFO 19 --- [           main] com.example.HajibootApplication          : The following profiles are active: cloud
+2016-12-18T14:05:00.45+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:00.450  INFO 19 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31221be2: startup date [Sun Dec 18 05:05:00 UTC 2016]; root of context hierarchy
+2016-12-18T14:05:01.99+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:01.996  INFO 19 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+2016-12-18T14:05:01.99+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:01.998  INFO 19 --- [           main] urceCloudServiceBeanFactoryPostProcessor : No beans of type javax.sql.DataSource found. Skipping auto-reconfiguration.
+2016-12-18T14:05:02.78+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:02.782  INFO 19 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-12-18T14:05:02.79+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:02.798  INFO 19 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-18T14:05:02.80+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:02.800  INFO 19 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-12-18T14:05:02.92+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:02.922  INFO 19 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-18T14:05:02.92+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:02.922  INFO 19 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2476 ms
+2016-12-18T14:05:03.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.200  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-18T14:05:03.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.207  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-18T14:05:03.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.208  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-18T14:05:03.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.208  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-18T14:05:03.20+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.209  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-18T14:05:03.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.730  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31221be2: startup date [Sun Dec 18 05:05:00 UTC 2016]; root of context hierarchy
+2016-12-18T14:05:03.86+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.867  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kill],methods=[GET]}" onto void com.example.HajibootApplication.kill()
+2016-12-18T14:05:03.87+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.869  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chap01],methods=[GET]}" onto java.lang.String com.example.HajibootApplication.home()
+2016-12-18T14:05:03.87+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.873  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18T14:05:03.87+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.874  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-18T14:05:03.92+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.924  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:05:03.92+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.924  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:05:03.99+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:03.994  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T14:05:04.31+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:04.317  INFO 19 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-18T14:05:04.38+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:04.387  INFO 19 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-18T14:05:04.39+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:04.398  INFO 19 --- [           main] com.example.HajibootApplication          : Started HajibootApplication in 5.424 seconds (JVM running for 6.125)
+2016-12-18T14:05:04.54+0900 [CELL/0]     OUT Container became healthy
+2016-12-18T14:05:21.08+0900 [RTR/1]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:21.074 +0000] "GET /chap01 HTTP/1.1" 200 0 37 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:52420" "10.10.148.78:60375" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"57fd1bb9-0b94-472d-6d22-4c9ccbf92689" response_time:0.006821606 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"2" x_b3_traceid:"d66207cd68f5de13" x_b3_spanid:"d66207cd68f5de13" x_b3_parentspanid:"-"
+2016-12-18T14:05:21.44+0900 [RTR/5]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:21.442 +0000] "GET /favicon.ico HTTP/1.1" 200 0 946 "https://hajiboot-hidetarou2013.cfapps.io/chap01" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:17727" "10.10.148.78:60375" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"8b9011e4-7a7b-4aa9-5fb3-f00aedca3abe" response_time:0.006553745 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"2" x_b3_traceid:"c75a70e3b97db186" x_b3_spanid:"c75a70e3b97db186" x_b3_parentspanid:"-"
+2016-12-18T14:05:22.11+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:22.111  INFO 19 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-18T14:05:22.11+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:22.111  INFO 19 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-18T14:05:22.12+0900 [APP/PROC/WEB/0]OUT 2016-12-18 05:05:22.129  INFO 19 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2016-12-18T14:05:22.18+0900 [RTR/1]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:22.081 +0000] "GET /chap01 HTTP/1.1" 200 0 37 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:18167" "10.10.148.82:60862" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"0b7692ce-a5ab-4832-55bb-87ddd38644fa" response_time:0.101697287 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"0" x_b3_traceid:"d5ff19ae94d62a81" x_b3_spanid:"d5ff19ae94d62a81" x_b3_parentspanid:"-"
+2016-12-18T14:05:22.42+0900 [RTR/4]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:22.394 +0000] "GET /favicon.ico HTTP/1.1" 200 0 946 "https://hajiboot-hidetarou2013.cfapps.io/chap01" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:36843" "10.10.148.82:60862" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"9940d63e-99a5-4438-56df-437d1e809532" response_time:0.027048126 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"0" x_b3_traceid:"86728f722f41160f" x_b3_spanid:"86728f722f41160f" x_b3_parentspanid:"-"
+2016-12-18T14:05:22.86+0900 [RTR/3]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:22.854 +0000] "GET /chap01 HTTP/1.1" 200 0 37 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:12804" "10.10.154.21:61194" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"d66f8d8a-a278-4bd2-488c-eac69cf4fef2" response_time:0.005295776 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"1" x_b3_traceid:"00ae4c9a351be3f0" x_b3_spanid:"00ae4c9a351be3f0" x_b3_parentspanid:"-"
+2016-12-18T14:05:23.07+0900 [RTR/0]      OUT hajiboot-hidetarou2013.cfapps.io - [18/12/2016:05:05:23.064 +0000] "GET /favicon.ico HTTP/1.1" 200 0 946 "https://hajiboot-hidetarou2013.cfapps.io/chap01" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" "10.10.66.143:44485" "10.10.148.78:60375" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"https" vcap_request_id:"bc69a623-3f75-469c-7c2e-c05cbfc05f2d" response_time:0.006456418 app_id:"79dc8f77-fd81-4f92-b742-2451299a6337" app_index:"2" x_b3_traceid:"8041cbd1b0d9b924" x_b3_spanid:"8041cbd1b0d9b924" x_b3_parentspanid:"-"
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>history
+'history' は、内部コマンドまたは外部コマンド、
+操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf scale hajiboot-hidetarou2013 -i 1
+Scaling app hajiboot-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>mvnw clean package -DskipTests=true
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hajiboot 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ hajiboot ---
+[INFO] Deleting C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hajiboot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hajiboot ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hajiboot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hajiboot ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ hajiboot ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ hajiboot ---
+[INFO] Building jar: C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot\target\hajiboot-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot-maven-plugin:1.4.0.RELEASE:repackage (default) @ hajiboot ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.168 s
+[INFO] Finished at: 2016-12-18T14:17:24+09:00
+[INFO] Final Memory: 31M/381M
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf push hajiboot-hidetarou2013-v2 -p target\hajiboot-0.0.1-SNAPSHOT.jar -m 256m -b java_buildpack
+Creating app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+Creating route hajiboot-hidetarou2013-v2.cfapps.io...
+OK
+
+Binding hajiboot-hidetarou2013-v2.cfapps.io to hajiboot-hidetarou2013-v2...
+OK
+
+Uploading hajiboot-hidetarou2013-v2...
+Uploading app files from: C:\Users\hide\AppData\Local\Temp\unzipped-app034870967
+Uploading 313.7K, 87 files
+Done uploading
+OK
+
+Starting app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+Downloading java_buildpack...
+Downloaded java_buildpack
+Creating container
+Successfully created container
+Downloading app package...
+Downloaded app package (12.2M)
+Staging...
+-----> Java Buildpack Version: v3.10 (offline) | https://github.com/cloudfoundry/java-buildpack.git#193d6b7
+-----> Downloading Open Jdk JRE 1.8.0_111 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_111.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+-----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+-----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+       Memory Settings: -Xms681574K -XX:MetaspaceSize=104857K -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K
+Exit status 0
+Staging complete
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (109B)
+Uploaded droplet (57.3M)
+Uploading complete
+Destroying container
+Successfully destroyed container
+
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App hajiboot-hidetarou2013-v2 was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
+
+Showing health and status for app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 256M x 1 instances
+urls: hajiboot-hidetarou2013-v2.cfapps.io
+last uploaded: Sun Dec 18 05:18:22 UTC 2016
+stack: cflinuxfs2
+buildpack: java_buildpack
+
+     state     since                    cpu    memory         disk           details
+#0   running   2016-12-18 02:19:04 PM   0.0%   177M of 256M   136.6M of 1G
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013-v2.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf map-route hajiboot-hidetarou2013-v2 cfapps.io -n hajiboot-hidetarou2013
+Creating route hajiboot-hidetarou2013.cfapps.io for org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+Route hajiboot-hidetarou2013.cfapps.io already exists
+Adding route hajiboot-hidetarou2013.cfapps.io to app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io, hajiboot-hidetarou2013-v2.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf unmap-route hajiboot-hidetarou2013 cfapps.io -n hajiboot-hidetarou2013
+Removing route hajiboot-hidetarou2013.cfapps.io from app hajiboot-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      started           1/1         256M     1G
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io, hajiboot-hidetarou2013-v2.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf unmap-route hajiboot-hidetarou2013-v2 cfapps.io -n hajiboot-hidetarou2013-v2
+Removing route hajiboot-hidetarou2013-v2.cfapps.io from app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      started           1/1         256M     1G
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf stop hajiboot-hidetarou2013
+Stopping app hajiboot-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      stopped           0/1         256M     1G
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf delete hajiboot-hidetarou2013
+
+Really delete the app hajiboot-hidetarou2013?>
+Delete cancelled
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013      stopped           0/1         256M     1G
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf delete hajiboot-hidetarou2013
+
+Really delete the app hajiboot-hidetarou2013?>
+Delete cancelled
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf delete hajiboot-hidetarou2013
+
+Really delete the app hajiboot-hidetarou2013?> y
+Deleting app hajiboot-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2   started           1/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf stop hajiboot-hidetarou2013-v2
+Stopping app hajiboot-hidetarou2013-v2 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                        requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2   stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter01\1.3_hajiboot>
