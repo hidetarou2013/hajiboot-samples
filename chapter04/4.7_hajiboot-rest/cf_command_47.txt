@@ -1,0 +1,271 @@
+g.springframework.data.domain.Page<com.example.domain.Customer> com.example.api.CustomerRestController.getCustomers(org.springframework.data.domain.Pageable)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.175  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[GET]}" onto com.example.domain.Customer com.example.api.CustomerRestController.getCustomer(java.lang.Integer)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.175  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers],methods=[POST]}" onto org.springframework.http.ResponseEntity<com.example.domain.Customer> com.example.api.CustomerRestController.postCustomers(com.example.domain.Customer,org.springframework.web.util.UriComponentsBuilder)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.176  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[PUT]}" onto com.example.domain.Customer com.example.api.CustomerRestController.putCustomer(java.lang.Integer,com.example.domain.Customer)
+2016-12-18T15:09:38.17+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.176  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/customers/{id}],methods=[DELETE]}" onto void com.example.api.CustomerRestController.deleteCustomer(java.lang.Integer)
+2016-12-18T15:09:38.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.179  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18T15:09:38.18+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.180  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-18T15:09:38.23+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.235  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.23+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.235  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.29+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.295  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-18T15:09:38.73+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.733  INFO 20 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-18T15:09:38.83+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.837  INFO 20 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-12-18T15:09:38.84+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:09:38.844  INFO 20 --- [           main] com.example.HajibootRestApplication      : Started HajibootRestApplication in 9.872 seconds (JVM running for 10.741)
+2016-12-18T15:09:40.86+0900 [CELL/0]     OUT Container became healthy
+2016-12-18T15:13:42.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.512  INFO 20 --- [io-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-18T15:13:42.51+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.512  INFO 20 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-18T15:13:42.56+0900 [APP/PROC/WEB/0]OUT 2016-12-18 06:13:42.561  INFO 20 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2016-12-18T15:13:43.06+0900 [RTR/0]      OUT hajiboot-rest-hidetarou2013.cfapps.io - [18/12/2016:06:13:42.471 +0000] "POST /api/customers HTTP/1.1" 201 40 47 "-" "curl/7.29.0" "10.10.66.143:25234" "10.10.148.102:61172" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"http" vcap_request_id:"33b6ddb7-624b-4d86-5bae-9a9f5e8959b9" response_time:0.592911663 app_id:"58252aca-1d02-4ca0-bb9d-51d00093e027" app_index:"0" x_b3_traceid:"b21c378f46545cf1" x_b3_spanid:"b21c378f46545cf1" x_b3_parentspanid:"-"
+2016-12-18T15:14:33.87+0900 [RTR/0]      OUT hajiboot-rest-hidetarou2013.cfapps.io - [18/12/2016:06:14:33.808 +0000] "GET /api/customers HTTP/1.1" 200 0 173 "-" "curl/7.29.0" "10.10.66.143:25387" "10.10.148.102:61172" x_forwarded_for:"220.104.171.197" x_forwarded_proto:"http" vcap_request_id:"baf66c1a-3f0d-4527-6354-3f7fe51570d6" response_time:0.066544948 app_id:"58252aca-1d02-4ca0-bb9d-51d00093e027" app_index:"0" x_b3_traceid:"19f2e5996aec3d8f" x_b3_spanid:"19f2e5996aec3d8f" x_b3_parentspanid:"-"
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.6.4_hajiboot-rest>cf logs hajiboot-rest-hidetarou2013 --recent > cf_logs_hajiboot_rest_hidetarou2013.txt
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.6.4_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   started           1/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.6.4_hajiboot-rest>cd ..\4.7_hajiboot-rest
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>mvnw clean package -DskipTests=true
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hajiboot-rest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ hajiboot-rest ---
+[INFO] Deleting C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hajiboot-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hajiboot-rest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hajiboot-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hajiboot-rest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ hajiboot-rest ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ hajiboot-rest ---
+[INFO] Building jar: C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest\target\hajiboot-rest-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot-maven-plugin:1.4.0.RELEASE:repackage (default) @ hajiboot-rest ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.711 s
+[INFO] Finished at: 2016-12-18T15:33:12+09:00
+[INFO] Final Memory: 31M/414M
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf push hajiboot-rest-hidetarou2013 -p target\hajiboot-rest-0.0.1-SNAPSHOT.jar -m 512m -b java_buildpack
+Updating app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+Uploading hajiboot-rest-hidetarou2013...
+Uploading app files from: C:\Users\hide\AppData\Local\Temp\unzipped-app977663943
+Uploading 511K, 107 files
+Done uploading
+OK
+
+Stopping app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+Starting app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+Downloading java_buildpack...
+Downloaded java_buildpack
+Creating container
+Successfully created container
+Downloading app package...
+Downloaded app package (27.5M)
+Downloading build artifacts cache...
+Downloaded build artifacts cache (108B)
+Staging...
+-----> Java Buildpack Version: v3.10 (offline) | https://github.com/cloudfoundry/java-buildpack.git#193d6b7
+-----> Downloading Open Jdk JRE 1.8.0_111 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_111.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+-----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xms681574K -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -XX:MetaspaceSize=104857K
+-----> Downloading Maria Db JDBC 1.5.4 from https://java-buildpack.cloudfoundry.org/mariadb-jdbc/mariadb-jdbc-1.5.4.jar (found in cache)
+-----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+Exit status 0
+Staging complete
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (108B)
+Uploaded droplet (73M)
+Uploading complete
+Destroying container
+Successfully destroyed container
+
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App hajiboot-rest-hidetarou2013 was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
+
+Showing health and status for app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 512M x 1 instances
+urls: hajiboot-rest-hidetarou2013.cfapps.io
+last uploaded: Sun Dec 18 06:34:06 UTC 2016
+stack: cflinuxfs2
+buildpack: java_buildpack
+
+     state     since                    cpu      memory         disk           details
+#0   running   2016-12-18 03:35:09 PM   229.3%   339M of 512M   154.1M of 1G
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   started           1/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>curl http://hajiboot-rest-hidetarou2013.cfapps.io/api/customers/health -i -XGET
+HTTP/1.1 400 Bad Request
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 18 Dec 2016 06:35:44 GMT
+X-Application-Context: hajiboot-rest-hidetarou2013:cloud:0
+X-Vcap-Request-Id: adf4749b-6825-4672-7d6e-992569390ab2
+Content-Length: 368
+Connection: keep-alive
+
+{"timestamp":1482042944690,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type [java.lang.String] to required type [java.lang.Integer]; nested exception is java.lang.NumberFormatException: For input string: \"health\"","path":"/api/customers/health"}
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>curl http://hajiboot-rest-hidetarou2013.cfapps.io/api/customers -i -XGET
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 18 Dec 2016 06:36:10 GMT
+X-Application-Context: hajiboot-rest-hidetarou2013:cloud:0
+X-Vcap-Request-Id: 132a45dd-1bb9-4a60-57f4-fb61c91908a5
+Content-Length: 173
+Connection: keep-alive
+
+{"content":[{"id":2,"firstName":"Nobita","lastName":"Nobi"}],"last":true,"totalPages":1,"totalElements":1,"size":10,"number":0,"numberOfElements":1,"first":true,"sort":null}
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>curl http://hajiboot-rest-hidetarou2013.cfapps.io/api/customers/health -i -XGET
+HTTP/1.1 400 Bad Request
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 18 Dec 2016 06:36:33 GMT
+X-Application-Context: hajiboot-rest-hidetarou2013:cloud:0
+X-Vcap-Request-Id: 85e99db9-952a-4031-4ee0-1176e12ebf26
+Content-Length: 368
+Connection: keep-alive
+
+{"timestamp":1482042993897,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type [java.lang.String] to required type [java.lang.Integer]; nested exception is java.lang.NumberFormatException: For input string: \"health\"","path":"/api/customers/health"}
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   started           1/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf stop hajiboot-rest-hidetarou2013
+Stopping app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   stopped           0/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf start hajiboot-rest-hidetarou2013
+Starting app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App hajiboot-rest-hidetarou2013 was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
+
+Showing health and status for app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 512M x 1 instances
+urls: hajiboot-rest-hidetarou2013.cfapps.io
+last uploaded: Sun Dec 18 06:34:06 UTC 2016
+stack: cflinuxfs2
+buildpack: java_buildpack
+
+     state     since                    cpu      memory           disk           details
+#0   running   2016-12-18 03:37:53 PM   172.9%   355.2M of 512M   154.1M of 1G
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>curl http://hajiboot-rest-hidetarou2013.cfapps.io/api/customers/health -i -XGET
+HTTP/1.1 400 Bad Request
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 18 Dec 2016 06:38:12 GMT
+X-Application-Context: hajiboot-rest-hidetarou2013:cloud:0
+X-Vcap-Request-Id: 4479c387-c7c2-4ee7-6b6e-011470a62397
+Content-Length: 368
+Connection: keep-alive
+
+{"timestamp":1482043092155,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type [java.lang.String] to required type [java.lang.Integer]; nested exception is java.lang.NumberFormatException: For input string: \"health\"","path":"/api/customers/health"}
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>curl http://hajiboot-rest-hidetarou2013.cfapps.io/health -i -XGET
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 18 Dec 2016 06:39:12 GMT
+X-Application-Context: hajiboot-rest-hidetarou2013:cloud:0
+X-Vcap-Request-Id: 535370a4-a68c-4d13-5160-f202d870c160
+Content-Length: 150
+Connection: keep-alive
+
+{"status":"UP","diskSpace":{"status":"UP","total":1056858112,"free":895266816,"threshold":10485760},"db":{"status":"UP","database":"MySQL","hello":1}}
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   started           1/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf stop hajiboot-rest-hidetarou2013
+Stopping app hajiboot-rest-hidetarou2013 in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>cf apps
+Getting apps in org hidetarou2013 / space development as hide1227@gmail.com...
+OK
+
+name                          requested state   instances   memory   disk   urls
+hajiboot-hidetarou2013-v2     stopped           0/1         256M     1G     hajiboot-hidetarou2013.cfapps.io
+hajiboot-rest-hidetarou2013   stopped           0/1         512M     1G     hajiboot-rest-hidetarou2013.cfapps.io
+
+C:\Users\hide\github\hajiboot-samples\chapter04\4.7_hajiboot-rest>
