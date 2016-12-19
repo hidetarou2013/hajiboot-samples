@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class HajibootApplication {
 
-	@GetMapping("/")
-	String hello() {
-		return "Hello World!";
+	@GetMapping
+	String home() {
+		return "Hello World!" + " (" + System.getenv("CF_INSTANCE_INDEX") + ") Ver. 2";
+	}
+
+	@GetMapping("kill")
+	void kill() {
+		System.exit(1);
 	}
 
 	public static void main(String[] args) {
