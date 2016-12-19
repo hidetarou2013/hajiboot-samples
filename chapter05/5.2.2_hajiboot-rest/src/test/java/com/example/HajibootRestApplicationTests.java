@@ -1,9 +1,10 @@
 package com.example;
 
-import com.example.domain.Customer;
-import com.example.repository.CustomerRepository;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.CoreMatchers.*;
+
+import java.util.Arrays;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,14 +14,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Arrays;
+import com.example.domain.Customer;
+import com.example.repository.CustomerRepository;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.CoreMatchers.*;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        properties = {"spring.datasource.url:jdbc:h2:mem:customers;DB_CLOSE_ON_EXIT=FALSE"})
+        properties = {"spring.datasource.url:jdbc:log4jdbc:h2:mem:customers;DB_CLOSE_ON_EXIT=FALSE"})
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+//properties = {"spring.datasource.url:jdbc:log4jdbc:h2:file:./target/db/customer;DB_CLOSE_ON_EXIT=FALSE"})
 public class HajibootRestApplicationTests {
     @Autowired
     CustomerRepository customerRepository;
